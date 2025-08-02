@@ -49,3 +49,14 @@ Please submit both a link to your repository and a link to the live site. Also p
 
 * [Bootstrap Documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 * [Bootstrap Grid System on W3 Schools](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp)
+
+# Assignment 14: Personal Portfolio
+
+## Bootstrap Components Used
+
+- Navbar (mobile-responsive)
+- Grid system (rows and columns)
+- Cards (Hobbies section)
+- Buttons (Contact section, Hero section)
+- Alert (Mission statement in Career Goals section)
+- Modal (Email Me button in Contact section)

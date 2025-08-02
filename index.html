@@ -7,8 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Lauren Rivero's Personal Portfolio</title>
   <style>
-    body {
-      font-family: Georgi, Verdana, Geneva, Tahoma, sans-serif;
+     body {
+      font-family: 'Palatino', serif;
       background-color: #faf9f6;
       color: #3a3a3a;
     }
@@ -18,18 +18,62 @@
     }
     
     .navbar-custom {
-      background-color: #e8f4f8 !important;
+      background-color: #d5dfd0 !important;
     }
     
     .navbar-custom .navbar-brand,
     .navbar-custom .nav-link {
       color: #2c3e50 !important;
     }
+    
+    .navbar-custom .navbar-toggler {
+      border-color: #2c3e50 !important;
+    }
+    
+    .navbar-custom .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2844, 62, 80, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    
+    .sage-green-bg {
+      background-color: #d5dfd0;
+    }
+    
+    /* Custom alert color */
+    .alert-primary {
+      background-color: #f0f8f0;
+      border-color: #7eb883;
+      color: #2d5a31;
+    }
+    
+    /* Custom button colors */
+    .btn-primary {
+      background-color: #8fa584;
+      border-color: #8fa584;
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background-color: #7d9472;
+      border-color: #7d9472;
+      color: white;
+    }
+    
+    .btn-outline-primary {
+      background-color: white;
+      border-color: #7eb883;
+      color: #2d5a31;
+    }
+    
+    .btn-outline-primary:hover {
+      background-color: #7eb883;
+      border-color: #7eb883;
+      color: white;
+    }
   </style>
 </head>
 <body>
   <!-- your code here -->
-    <!-- Mobile-responsive navbar -->
+  <!-- Mobile-responsive navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Lauren Rivero</a>
@@ -76,12 +120,10 @@
           <h2 class="text-center mb-5">About Me</h2>
           <div class="row">
             <div class="col-md-6 mb-4">
-              <p>I'm currently a graduate student at the University of Florida pursuing a Master of Arts in Mass Communication with a specialization in Web Design and Online Communication. As a Web Design Teacher, I'm passionate about sharing knowledge and helping students discover the creative potential of digital design.</p>
-              <p>My academic and professional journey has given me a strong foundation in web technologies, user experience principles, and design theory. I'm particularly interested in how design can create meaningful digital experiences that connect with users.</p>
+              <p>I'm currently a graduate student at the University of Florida pursuing a Master of Arts in Mass Communication with a specialization in Web Design and Online Communication. As a Web Design Teacher, I'm passionate about sharing knowledge and helping students discover the creative potential of digital design. My academic and professional journey has given me a strong foundation in web technologies, user experience principles, and design theory. I'm particularly interested in how design can create meaningful digital experiences.</p>
             </div>
             <div class="col-md-6 mb-4">
-              <p>Beyond academics and teaching, I believe in the power of continuous learning and hands-on practice. I enjoy working on personal web development projects that challenge me to explore new technologies and design approaches.</p>
-              <p>My goal is to bridge the gap between beautiful design and functional user experiences, creating digital solutions that are both aesthetically pleasing and highly usable.</p>
+              <p>Beyond academics and teaching, I believe in the power of continuous learning and hands-on practice. I enjoy working on personal web development projects that challenge me to explore new technologies and design approaches. My goal is to bridge the gap between beautiful design and functional user experiences, creating digital solutions that are both aesthetically pleasing and highly usable for diverse audiences. I strive to create designs that connect with users on both functional and emotional levels.</p>
             </div>
           </div>
         </div>
@@ -90,14 +132,14 @@
   </section>
 
   <!-- Hobbies Section with Cards -->
-  <section id="hobbies" class="section-padding">
+  <section id="hobbies" class="section-padding" style="background-color: #d5dfd0;">
     <div class="container">
       <h2 class="text-center mb-5">My Hobbies & Interests</h2>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
-              <h5 class="card-title">💻 Website Development</h5>
+              <h5 class="card-title">Website Development</h5>
               <p class="card-text">I love working on personal web development projects that allow me to experiment with new technologies and design concepts. Each project teaches me something new about user experience and modern web standards.</p>
             </div>
           </div>
@@ -105,7 +147,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
-              <h5 class="card-title">🎨 Drawing</h5>
+              <h5 class="card-title">Drawing</h5>
               <p class="card-text">I enjoy sketching and studying the techniques of old masters. Drawing helps me understand composition, form, and visual hierarchy - skills that directly translate to my digital design work and enhance my creative problem-solving abilities.</p>
             </div>
           </div>
@@ -113,15 +155,15 @@
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
-              <h5 class="card-title">✈️ Traveling</h5>
-              <p class="card-text">Traveling exposes me to different cultures, design philosophies, and ways of thinking. Each destination provides fresh inspiration for my design work and helps me understand how users from different backgrounds interact with digital experiences.</p>
+              <h5 class="card-title">Traveling</h5>
+              <p class="card-text">Traveling exposes me to different cultures, design philosophies, and ways of thinking. Each destination provides fresh inspiration for my design work and helps me understand how users interact with digital experiences.</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 offset-lg-2">
           <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
-              <h5 class="card-title">🎵 Music</h5>
+              <h5 class="card-title">Music</h5>
               <p class="card-text">I'm passionate about listening to music and learning about its history. Understanding how musical composition creates emotional responses helps me think about how design elements can evoke feelings and create memorable user experiences.</p>
             </div>
           </div>
@@ -129,7 +171,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
-              <h5 class="card-title">🏋️‍♀️ Weight Lifting</h5>
+              <h5 class="card-title">Weight Lifting</h5>
               <p class="card-text">Weight lifting teaches me discipline, goal-setting, and the importance of consistent practice. The mental focus and perseverance required in fitness directly applies to tackling complex design challenges and long-term projects.</p>
             </div>
           </div>
@@ -139,33 +181,33 @@
   </section>
 
   <!-- Career Goals Section -->
-  <section id="goals" class="section-padding bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2 class="text-center mb-5">Career Goals</h2>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <h4>Short-term Goals</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3">💼 Secure a UX/UI design internship at a tech company for the upcoming summer term</li>
-                <li class="mb-3">🎓 Complete my Master's degree by December of next year (or sooner)</li>
-                <li class="mb-3">🔧 Gain experience in all relevant technologies and software in the UX/UI field</li>
-                <li class="mb-3">🚀 Contribute to at least 2 personal projects by the end of this year</li>
-                <li class="mb-3">📚 Continue developing my teaching skills and design methodologies</li>
-              </ul>
-            </div>
-            <div class="col-md-6 mb-4">
-              <h4>Long-term Goals</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3">🏢 Work for a respectable company after graduation</li>
-                <li class="mb-3">👥 Lead design teams on innovative UX/UI projects</li>
-                <li class="mb-3">📈 Invest wisely in the stock market and build financial stability</li>
-                <li class="mb-3">🌟 Advance to a senior UX/UI designer position</li>
-                <li class="mb-3">🎯 Create digital experiences that make a meaningful impact on users' lives</li>
-              </ul>
-            </div>
+<section id="goals" class="section-padding bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-center mb-5">Career Goals</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h4>Short-term Goals</h4>
+            <ol type="I">
+              <li class="mb-3">Secure a UX/UI design internship at a tech company for the upcoming summer term</li>
+              <li class="mb-3">Complete my Master's degree by December of next year (or sooner)</li>
+              <li class="mb-3">Gain experience in all relevant technologies and software in the UX/UI field</li>
+              <li class="mb-3">Contribute to at least 2 personal projects by the end of this year</li>
+              <li class="mb-3">Continue developing my teaching skills and design methodologies</li>
+            </ol>
           </div>
+          <div class="col-md-6 mb-4">
+            <h4>Long-term Goals</h4>
+            <ol type="I">
+              <li class="mb-3">Work for a respectable company after graduation</li>
+              <li class="mb-3">Lead design teams on innovative UX/UI projects</li>
+              <li class="mb-3">Invest wisely in the stock market and build financial stability</li>
+              <li class="mb-3">Advance to a senior UX/UI designer position</li>
+              <li class="mb-3">Create digital experiences that make a meaningful impact on users' lives</li>
+            </ol>
+          </div>
+        </div>
           <div class="row mt-4">
             <div class="col-12">
               <div class="alert alert-primary">
@@ -180,7 +222,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section-padding">
+  <section id="contact" class="section-padding" style="background-color: #d5dfd0;">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
@@ -188,18 +230,18 @@
           <p class="lead mb-4">I'm always interested in connecting with fellow designers, educators, students, and anyone passionate about creating meaningful digital experiences.</p>
           <div class="row">
             <div class="col-md-4 mb-3">
-              <button class="btn btn-outline-primary btn-lg w-100">
-                📧 Email Me
+              <button class="btn btn-outline-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#emailModal">
+                Email Me
               </button>
             </div>
             <div class="col-md-4 mb-3">
               <button class="btn btn-outline-primary btn-lg w-100">
-                💼 LinkedIn
+                LinkedIn
               </button>
             </div>
             <div class="col-md-4 mb-3">
               <button class="btn btn-outline-primary btn-lg w-100">
-                💻 GitHub
+                GitHub
               </button>
             </div>
           </div>
@@ -219,5 +261,20 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="emailModalLabel">Contact Lauren</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
